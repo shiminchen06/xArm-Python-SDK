@@ -905,7 +905,7 @@ class XArmAPI(object):
                 ex: code = arm.set_servo_angle(servo_id=1, angle=45, is_radian=False)
             2. None(8) means all joints, default is None, the parameter angle should be a list of values whose length is the number of joints
                 ex: code = arm.set_servo_angle(angle=[30, -45, 0, 0, 0, 0, 0], is_radian=False)
-        :param angle: angle or angle list, (unit: rad if is_radian is True else °)
+        :param angle: angle or angle list, (unit: rad if is_radian is True else °)ƒ
             1. If servo_id is 1-(Number of axes), angle should be a numeric value
                 ex: code = arm.set_servo_angle(servo_id=1, angle=45, is_radian=False)
             2. If servo_id is None or 8, angle should be a list of values whose length is the number of joints
